@@ -1,6 +1,10 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
+import About from "./pages/About.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Contact from "./pages/Contact.jsx";
+import Resume from "./pages/Resume.jsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -9,21 +13,20 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        element: <h1>This is the homepage</h1>,
+        element: <About />,
         path: "/",
       },
       {
-        element: (
-          <>
-            <h1>This is the login page</h1>
-            <form>
-              <label>Username</label>
-              <input type="text" />
-              <button>Submit</button>
-            </form>
-          </>
-        ),
-        path: "/login",
+        element: <Portfolio />,
+        path: "/portfolio",
+      },
+      {
+        element: <Contact />,
+        path: "/contact",
+      },
+      {
+        element: <Resume />,
+        path: "/resume",
       },
     ],
   },

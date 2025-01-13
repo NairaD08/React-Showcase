@@ -1,27 +1,18 @@
 import "./App.css";
 import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <header>
-        <ul>
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/login">Login</a>
-          </li>
-        </ul>
-      </header>
+      <Header />
 
       <main>
         <Outlet />
       </main>
 
-      <footer>
-        <h2>Created by Naira</h2>
-      </footer>
+      <Footer />
     </>
   );
 }
