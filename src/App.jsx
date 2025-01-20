@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
 
-      <main>
+      <main className="bg-sky-100">
         <Outlet />
       </main>
 
