@@ -2,6 +2,9 @@
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-style: normal;
 }
+main {
+  min-height: 73vh;
+}
 .nunito-font {
   font-family: "Nunito", serif;
   font-optical-sizing: auto;
